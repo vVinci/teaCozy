@@ -1,11 +1,59 @@
-*{
-  color: gray;
+body {
+  margin: 0;
+  padding: 0;
   font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+a{
+  color: seashell;
+  margin: 0 0 0 20px;
+}
+
+header{
+  display: flex;
+  width: 100%;
+  min-height: 69px;
+  max-height: auto;
+  position: fixed;
+  background-color: black;
+  border-bottom: solid 1px seashell;
+  align-items: center;
+  z-index: 1;
+  justify-content: flex-end;
+}
+
+nav {
+  padding-right: 20px;
+}
+
+span{
+  color: seashell;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo img{
+  position: relative;
+  height: 50px;
+  margin: 10px;
+}
+
+.logo {
+  align-items: center;
 }
 
 /* top container */
 
 .topc {
+  padding-top: 70px;
   display: flex;
   background-image: url("../images/img-mission-background.jpg");
   background-size: cover;
@@ -17,6 +65,33 @@
   background-color: black;
   width: 100%;
   text-align: center;
+}
+
+/* mid container */
+
+.midc{
+  display: flex;
+  flex: initial;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.midc h1{
+  width: 100%;
+}
+
+.midc h2{
+  width: 100%;
+}
+
+.boxmonth img{
+  margin: 10px;
+  width: 300px;
+  height: 200px;
 }
 
 /* bottom container */
@@ -35,6 +110,7 @@
 
 .box {
   margin: 20px;
+  padding: 5px;
   opacity: 1;
   display: flex;
   justify-content: space-around;
@@ -47,4 +123,13 @@
 .botc h2{
   width: 100%;
   margin-bottom: 15px;
+}
+
+footer{
+  text-align: center;
+}
+
+.copyright {
+  text-align: left;
+  padding-left: 20px;
 }
